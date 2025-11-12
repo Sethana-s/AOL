@@ -35,3 +35,14 @@ Feel free to fork this repository and submit pull requests. For major changes, p
 
 ## Contact
 For any inquiries, please contact us at [support@adviceoflife.com](mailto:support@adviceoflife.com).
+This template is inspired from HTML Codex template
+
+  =>  Template Name    : AdviceOfLife - Life Insurance Website Template
+
+  =>  Template Link    : https://htmlcodex.com/life-insurance-website-template
+
+  =>  Template License : https://htmlcodex.com/license (or read the LICENSE.txt file)
+
+  =>  Template Author  : HTML Codex
+
+  =>  Author Website   : https://htmlcodex.com
