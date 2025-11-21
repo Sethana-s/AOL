@@ -99,6 +99,58 @@
         return false;
     });
 
+    // ===================================
+    // CONTACT FORM SUBMISSION LOGIC (AJAX)
+    // ===================================
+    $('#contact-form').on('submit', async function(event) {
+        event.preventDefault(); // Stop the default browser submission
+
+        const form = $(this)[0]; // Get the native DOM element for FormData
+        const endpoint = 'https://api.web3forms.com/submit';
+
+        const formData = new FormData(form);
+        
+        // Convert form data into a JSON object required by Web3Forms
+        const object = Object.fromEntries(formData.entries());
+        const json = JSON.stringify(object);
+
+        const $submitButton = $(form).find('button[type="submit"]');
+        
+        // Show loading state
+        $submitButton.prop('disabled', true).text('Sending...');
+
+        try {
+            // Send data using the Fetch API
+            const response = await fetch(endpoint, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: json
+            });
+
+            const result = await response.json();
+
+            // Handle the response
+            if (result.success) {
+                alert('Success! Your message has been sent.');
+                form.reset(); // Clear form fields
+            } else {
+                // Display user-friendly error
+                alert('Submission failed. Please try again.');
+                // Log detailed error to console for developer debugging
+                console.error('Submission Error:', result.message);
+            }
+        } catch (error) {
+            console.error('Network Error:', error);
+            alert('A network error occurred. Please check your connection.');
+        } finally {
+            // Reset button state
+            $submitButton.prop('disabled', false).text('Send Message');
+        }
+    });
+
 
 })(jQuery);
 
