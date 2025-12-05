@@ -43,19 +43,18 @@
     </div>
     <!-- Spinner End -->
 
-    <!-- Topbar Start -->
-    <div class="container-fluid topbar px-0 px-lg-4 bg-light py-2 d-none d-lg-block">
-        <div class="container">
-            <div class="row gx-0 align-items-center">
-                <div class="col-lg-8 text-center text-lg-start mb-lg-0">
-                    <div class="d-flex flex-wrap">
-                        <div class="border-end border-primary pe-3">
-                            <a href="#" class="text-muted small"><i
-                                    class="fas fa-map-marker-alt text-primary me-2"></i>Find A Location</a>
-                        </div>
-                        <div class="ps-3">
-                            <a href="mailto:hello@adviceoflife.com.au" class="text-muted small"><i
-                                    class="fas fa-envelope text-primary me-2"></i>hello@adviceoflife.com.au</a>
+        <!-- Topbar Start -->
+        <!-- <div class="container-fluid topbar px-0 px-lg-4 bg-light py-2 d-none d-lg-block">
+            <div class="container">
+                <div class="row gx-0 align-items-center">
+                    <div class="col-lg-8 text-center text-lg-start mb-lg-0">
+                        <div class="d-flex flex-wrap">
+                            <div class="border-end border-primary pe-3">
+                                <a href="#" class="text-muted small"><i class="fas fa-map-marker-alt text-primary me-2"></i>Find A Location</a>
+                            </div>
+                            <div class="ps-3">
+                                <a href="mailto:hello@adviceoflife.com.au" class="text-muted small"><i class="fas fa-envelope text-primary me-2"></i>hello@adviceoflife.com.au</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -78,9 +77,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- Topbar End -->
+        </div> -->
+        <!-- Topbar End -->
 
     <!-- Navbar & Hero Start -->
     <div class="container-fluid nav-bar px-0 px-lg-4 py-lg-0">
@@ -124,9 +122,31 @@
                             <span><i class="fa fa-comment-dots text-secondary"></i></span>
                         </div>
                     </a>
-                    <div class="d-flex flex-column ms-3">
-                        <span>Call to Our Experts</span>
-                        <a href="tel:+ 0123 456 7890"><span class="text-dark">Free: 0490 421 166</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav mx-0 mx-lg-auto">
+                            <a href="index.html" class="nav-item nav-link">Home</a>
+                            <a href="about.html" class="nav-item nav-link">About</a>
+                            <a href="service.html" class="nav-item nav-link">Services</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link" data-bs-toggle="dropdown">
+                                    <span class="dropdown-toggle">Pages</span>
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a href="feature.html" class="dropdown-item">Our Features</a>
+                                    <a href="team.html" class="dropdown-item">Our team</a>
+                                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                    <a href="FAQ.html" class="dropdown-item">FAQs</a>
+                                    <a href="404.html" class="dropdown-item">404 Page</a>
+                                </div>
+                            </div>
+                            <a href="contact.html" class="nav-item nav-link active">Contact</a>
+                            <div class="nav-btn px-3">
+                                <!-- <a href="#" class="btn btn-primary rounded-pill py-2 px-4 ms-3 flex-shrink-0"> Get a Quote</a> -->
+                            </div>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -308,31 +328,25 @@
     <!-- Contact End -->
 
 
-    <!-- Footer Start -->
-    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-xl-9">
-                    <div class="mb-5">
-                        <div class="row g-4">
-                            <div class="col-md-6 col-lg-6 col-xl-5">
-                                <div class="footer-item">
-                                    <a href="index.html" class="p-0">
-                                        <h3 class="text-white mb-0"><img src="img/logo.png" alt="Logo"
-                                                style="max-height: 50px;"> Advice OfLife</h3>
-                                    </a>
-                                    <p class="text-white mb-4">At Advice of Life, we provide general advice on personal
-                                        risk insurance so you can better understand your options and take the first step
-                                        towards the right cover....</p>
-                                    <div class="footer-btn d-flex">
-                                        <a class="btn btn-md-square rounded-circle me-3" href="#"><i
-                                                class="fab fa-facebook-f"></i></a>
-                                        <a class="btn btn-md-square rounded-circle me-3" href="#"><i
-                                                class="fab fa-twitter"></i></a>
-                                        <a class="btn btn-md-square rounded-circle me-3" href="#"><i
-                                                class="fab fa-instagram"></i></a>
-                                        <a class="btn btn-md-square rounded-circle me-0" href="#"><i
-                                                class="fab fa-linkedin-in"></i></a>
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-xl-9">
+                        <div class="mb-5">
+                            <div class="row g-4">
+                                <div class="col-md-6 col-lg-6 col-xl-5">
+                                    <div class="footer-item">
+                                        <a href="index.html" class="p-0">
+                                            <h3 class="text-white mb-0" ><img src="img/logo.png" alt="Logo" style="max-height: 50px;"> Advice OfLife</h3>
+                                        </a>
+                                        <p class="text-white mb-4">At Advice of Life, we provide general advice on personal risk insurance so you can better understand your options and take the first step towards the right cover....</p>
+                                        <div class="footer-btn d-flex">
+                                            <!-- <a class="btn btn-md-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f"></i></a>
+                                            <a class="btn btn-md-square rounded-circle me-3" href="#"><i class="fab fa-twitter"></i></a>
+                                            <a class="btn btn-md-square rounded-circle me-3" href="#"><i class="fab fa-instagram"></i></a>
+                                            <a class="btn btn-md-square rounded-circle me-0" href="#"><i class="fab fa-linkedin-in"></i></a> -->
+                                        </div>
                                     </div>
                                 </div>
                             </div>
